@@ -1568,3 +1568,53 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
 });
+
+/* =========================================================
+   SCROLL HINT NAVIGATION
+   ========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
+
+        const scrollHints =
+            document.querySelectorAll(
+                ".scroll-hint"
+            );
+
+
+        scrollHints.forEach(
+            (hint) => {
+
+                hint.addEventListener(
+                    "click",
+                    () => {
+
+                        const targetId =
+                            hint.dataset.target;
+
+
+                        const target =
+                            document.getElementById(
+                                targetId
+                            );
+
+
+                        if (!target) {
+                            return;
+                        }
+
+
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+
+                    }
+                );
+
+            }
+        );
+
+    }
+);
