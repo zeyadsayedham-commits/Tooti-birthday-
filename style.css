@@ -1505,3 +1505,9 @@ button {
     }
 }
 
+/* Final reason text color */
+
+.reason-text {
+    color: #F4C2D0 !important;
+}
+
