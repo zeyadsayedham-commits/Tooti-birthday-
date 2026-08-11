@@ -651,12 +651,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         if (
-            currentReason >=
-            reasons.length - 1
-        ) {
+    currentReason >=
+    reasons.length - 1
+) {
 
-            return;
-        }
+    if (pageFour) {
+
+        pageFour.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    }
+
+    return;
+}
 
 
         isReasonAnimating =
