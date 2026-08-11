@@ -1511,3 +1511,7 @@ button {
     color: #F4C2D0 !important;
 }
 
+.next-hint {
+  font-weight: 600;
+}
+
