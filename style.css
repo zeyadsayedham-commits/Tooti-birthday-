@@ -1414,3 +1414,54 @@ button {
     }
 }
 
+/* =========================================================
+   FINAL SCROLL HINT POSITION
+   ========================================================= */
+
+.scroll-hint {
+    position: relative;
+
+    left: auto;
+    bottom: auto;
+
+    margin: 28px auto 0;
+
+    transform: none;
+
+    animation:
+        scroll-hint-float-relative
+        2s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes scroll-hint-float-relative {
+
+    0%,
+    100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(5px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .scroll-hint {
+        position: relative;
+
+        left: auto;
+        bottom: auto;
+
+        margin: 28px auto 0;
+
+        transform: none;
+    }
+}
+
