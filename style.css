@@ -1515,3 +1515,7 @@ button {
   font-weight: 600;
 }
 
+.next-hint {
+  font-weight: 600 !important;
+}
+
